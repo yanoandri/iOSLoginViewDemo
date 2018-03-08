@@ -14,6 +14,9 @@
 		E8CBEC6F204E5639004680F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8CBEC6D204E5639004680F2 /* LaunchScreen.storyboard */; };
 		E8CBEC7A204E5639004680F2 /* LoginViewDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CBEC79204E5639004680F2 /* LoginViewDemoTests.swift */; };
 		E8CBEC85204E5639004680F2 /* LoginViewDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CBEC84204E5639004680F2 /* LoginViewDemoUITests.swift */; };
+		E8CBEC93204E83DE004680F2 /* ForgotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CBEC92204E83DE004680F2 /* ForgotViewController.swift */; };
+		E8CBEC95204E84E8004680F2 /* GenericViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CBEC94204E84E8004680F2 /* GenericViewController.swift */; };
+		E8CBEC97204E902C004680F2 /* ExtUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CBEC96204E902C004680F2 /* ExtUIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		E8CBEC80204E5639004680F2 /* LoginViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8CBEC84204E5639004680F2 /* LoginViewDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewDemoUITests.swift; sourceTree = "<group>"; };
 		E8CBEC86204E5639004680F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8CBEC92204E83DE004680F2 /* ForgotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotViewController.swift; sourceTree = "<group>"; };
+		E8CBEC94204E84E8004680F2 /* GenericViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericViewController.swift; sourceTree = "<group>"; };
+		E8CBEC96204E902C004680F2 /* ExtUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtUIViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,9 @@
 				E8CBEC6B204E5639004680F2 /* Assets.xcassets */,
 				E8CBEC6D204E5639004680F2 /* LaunchScreen.storyboard */,
 				E8CBEC70204E5639004680F2 /* Info.plist */,
+				E8CBEC92204E83DE004680F2 /* ForgotViewController.swift */,
+				E8CBEC94204E84E8004680F2 /* GenericViewController.swift */,
+				E8CBEC96204E902C004680F2 /* ExtUIViewController.swift */,
 			);
 			path = LoginViewDemo;
 			sourceTree = "<group>";
@@ -259,8 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8CBEC97204E902C004680F2 /* ExtUIViewController.swift in Sources */,
 				E8CBEC67204E5639004680F2 /* ViewController.swift in Sources */,
 				E8CBEC65204E5639004680F2 /* AppDelegate.swift in Sources */,
+				E8CBEC95204E84E8004680F2 /* GenericViewController.swift in Sources */,
+				E8CBEC93204E83DE004680F2 /* ForgotViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +440,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LoginViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dycode.LoginViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -442,6 +455,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LoginViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dycode.LoginViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

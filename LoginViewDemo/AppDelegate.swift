@@ -13,9 +13,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
+    func showHomeViewController(){
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let homeController = storyboard.instantiateViewController(withIdentifier: "storyboard_NavHome")
+        
+        self.window?.rootViewController = homeController
+    }
+    
+    func setRootViewController(_ viewController: UIViewController){
+        UIView.transition(with: window!, duration: 0.3, options: [.transitionCrossDissolve, .allowAnimatedContent], animations: {() -> Void in
+            
+            let oldState = UIView.areAnimationsEnabled
+            
+            UIView.setAnimationsEnabled(false)
+            self.window?.rootViewController = viewController
+            UIView.setAnimationsEnabled(oldState)
+            
+        }, completion: nil)
+    }
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        UINavigationBar.appearance().shadowImage = UIImage()
+        
+//        if true{
+//            showHomeViewController()
+//        }
         return true
     }
 
